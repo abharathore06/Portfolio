@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/var.js"></script>
+</head>
+<body>
+    <div class="site-main-wrapper">
+        <button class="hamberger" onclick="myFunction();">
+            <img src="./images/hamberger.png" alt="">
+        </button>
+
+        <div class="mobile-nav">
+            <div class="logo">
+                <strong>Portfo<span>lio.</span></strong>
+            </div>
+            <hr>
+            <button class="times"><img src="./images/times.png" alt=""></button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+    
+                <!------------------------- navigation menu -------------------------->
+    
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="logo">
+                            <strong>Portfo<span>lio.</span></strong>
+                        </div>
+                        <div>
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#projects">Projects</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button class="btn btn-primary"><a href="#contact">Contact</a></button>
+                    </div>
+                </nav>
+    
+                <!------------------------- home menu -------------------------->
+    
+                <div id= 'home' class="home flex items-center justify-between">
+                    <div class="left flex-1 lex justify-center">
+                        <img src="./images/abha.png">
+                    </div>
+    
+                    <div class="right flex-1">
+                        <h3>Abha Rathore</h3>
+                        <h1>I'm a <span>Student</span></h1>
+                        <p>I am recently a student persuing Software Engineering. I believe my
+                        fast learning abilities, commitment to succeed, and relevant studies
+                        make me the perfect fit for this position. Awarded multiple honors
+                        based on merits and expected to graduate with a B.Tech. in Computer
+                        Science from Techno India NJR Institute of Technology in the year of 2023.</p>
+                        <div>
+                            <button class = "btn btn-secondary"><a href="#available">Download CV</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+    
+        <!------------------------- About section -------------------------->
+        <section id = 'about' class="about">
+            <div class="container flex items-center"> 
+                <div class="flex-1">
+                    <img class="about-img" src="./images/abha-2.jpg" alt="">
+                </div>
+                <div class="flex-1">
+                    <h1>About<span>ME</span></h1>
+                    <h3>Hello! I am Abha Rathore</h3>
+                    <p>I am a student persuing my college degree with software engineering. An inspired student 
+                        consistently need to explore the way. Dedicating my best to learn different new advances and 
+                        participating in each extra trainings offered. Will demonstrate my best learnings and experiences to 
+                        contribute to organization's objectives and requirements by putting all my hardwork and amounts of 
+                        energy.</p>
+                    <div class="social flex">
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <!------------------------- Skills Section -------------------------->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h1 class="section-heading"><span>My </span>Skills</h1>
+                <p>Every skill you acquire doubles your odds of success.</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/code.png" alt="">
+                        <h2>Web Development</h2>
+                        <p>Web design is not just about creating pretty layouts. It’s about planning 
+                            to arrange elements in such a way as best to accomplish a particular purpose.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/desktop.png" alt="">
+                        <h2>Software Development</h2>
+                        <p>First, solve the problem. Then, write the code. The most important single aspect 
+                            of software development is to be clear about what you are trying to build.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/media.png" alt="">
+                        <h2>Video Editing</h2>
+                        <p>The process of editing is what I enjoy most - putting the pieces together and making 
+                            sense out of them. We put two things together, and a current runs through it.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/brush.png" alt="">
+                        <h2>Graphic Designing</h2>
+                        <p>Technology over technique produces emotionless design. People don't use 
+                            a product because of the great design; great design helps them use the product.</p>
+                    </div>
+                    <!--div class="card">
+                        <img src="./images/code.png" alt="">
+                        <h2>Web Development</h2>
+                        <p>Web design is not just about creating pretty layouts. It’s about planning to arrange elements in such a way as best to accomplish a particular purpose.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./images/code.png" alt="">
+                        <h2>Web Development</h2>
+                        <p>Web design is not just about creating pretty layouts. It’s about planning to arrange elements in such a way as best to accomplish a particular purpose.</p>
+                    </div-->
+                </div>
+            </div>
+        </section>
+    
+        <!------------------------- Available Section -------------------------->
+    
+        <section id="available" class="available"> 
+            <h1>I'm Available For Freelancer.</h1>
+            <p>We provide high standard clean website for your business solutions.</p>
+            <a href="./images/AbhaRathore.pdf" download=""><button class="btn btn-primary">Download CV</button></a>
+        </section>
+    
+        <!------------------------- Words Section -------------------------->
+    
+        <section class="words">
+            <div class="container">
+                <h1 class="section-heading">My<span>Words</span></h1>
+                <p>Hardworking, determined and focused with a keen eye for details.</p>
+            </div>
+            <div class="slide">
+                <img src="./images/abha-3.jpg">
+                <p>I would like to be a part of an organization where I could use and enhance 
+                    my knowledge and talent for the development of both the organization and myself.
+                    No better opportunity than this can come my way. I can showcase my talent and 
+                    prove my skills here, while in turn, I can learn how this industry functions in
+                    and out. So, you may hire me as you can get the best out of me while
+                    I get to learn the best from your company too.</p>
+                <span>- Abha Rathore</span>
+            </div>
+        </section>
+    
+        <!------------------------- Projects Section -------------------------->
+        
+        <section id="projects" class="projects">
+            <div class="container">
+                <h1 class="section-heading">My <span>Projects</span></h1>
+                <p>Hardworking, determined and focused with a keen eye for details.</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="img-wrapper"><img src="./images/DA.jpg" alt=""></div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h1>Desktop Assisstant</h1>
+                        </a>
+                        <span>June 9, 2021</span>
+                        <p>A virtual assistant is an application program built using python language 
+                            that understands natural language voice commands and completes tasks for 
+                            the user. It is designed to perform various tasks like opening websites for 
+                            you, getting real time details, media related activities, search wikipedia, 
+                            launch applications and more. We can interact with your laptop’s microphone/console. 
+                            The response generated by the assistant will display on the console or as
+                             a speech via the speaker.</p>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper"><img src="./images/FB.PNG" alt=""></div>
+                    <div class="card-content">
+                        <a href="#">
+                            <h1>Flappy Bird</h1>
+                        </a>
+                        <span>June 22, 2021</span>
+                        <p>Flappy Bird Game is developed in Python Programming Language and it is a desktop
+                            application. This project system used a Pygame and Random module. Pygame is 
+                            a cross-platform set of Python modules designed for writing video games. This
+                            Flappy Bird Game has a task record contains images file, sounds file and python
+                            contents file. The ongoing interaction Graphics is sufficient and the controls
+                            are straightforward for the clients. All the playing strategies are too 
+                            straightforward simply like the genuine one.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+       <!------------------------- Contacts Section -------------------------->
+       
+       <section id="contact" class="contact">
+           <div class="container">
+               <h1 class="section-heading">Contact <span>Me</span></h1>
+               <p>We provide high standard clean website for your business solutions.</p>
+           </div>
+           <div class="card-wrapper">
+               <div class="card">
+                   <img src="./images/phone-2.png" alt="">
+                   <h2>Call Me on</h2>
+                   <h6 id="no"></h6>
+               </div>
+               <div class="card">
+                    <img src="./images/msg.png" alt="">
+                    <h2>Email Me At</h2>
+                    <h6 id="em"></h6>
+                </div>
+                <div class="card">
+                    <img src="./images/li1.png" alt="">
+                    <h2>Reach Me At</h2>
+                    <a href="#" id="ln"></a>
+                </div>
+           </div>
+    
+           <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Your Name *">
+                    <input type="email" placeholder="Your Email *">
+                </div>
+                <div class="input-wrap-2">
+                    <input type="text" placeholder="Your Subject...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary">Send Message</button>
+                </div>
+           </form>
+        </section>
+    
+        <!------------------------- Footer Section -------------------------->
+        
+        <footer>
+            <div class='footer-logo'>
+                <strong>Portfo<span>lio.</span></strong>
+                <hr>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+    
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
