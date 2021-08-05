@@ -1,5 +1,3 @@
-
-
 function myFunction(){
 
     let hamberger = document.querySelector('.hamberger');

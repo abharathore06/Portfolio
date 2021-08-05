@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/var.js"></script>
+    
 </head>
 <body>
     <div class="site-main-wrapper">
@@ -37,7 +40,7 @@
     
                 <nav id="main-nav" class="flex items-center justify-between">
                     <div class="left flex items-center">
-                        <div class="logo">
+                        <div class="logo" data-aos="fade-down" data-aos-duration="1500">
                             <strong>Portfo<span>lio.</span></strong>
                         </div>
                         <div>
@@ -55,11 +58,11 @@
                 <!------------------------- home menu -------------------------->
     
                 <div id= 'home' class="home flex items-center justify-between">
-                    <div class="left flex-1 lex justify-center">
+                    <div class="left flex-1 lex justify-center" data-aos="fade-right" data-aos-duration="1500">
                         <img src="./images/abha.png">
                     </div>
     
-                    <div class="right flex-1">
+                    <div class="right flex-1" data-aos="fade-left" data-aos-duration="1500">
                         <h3>Abha Rathore</h3>
                         <h1>I'm a <span>Student</span></h1>
                         <p>I am recently a student persuing Software Engineering. I believe my
@@ -79,7 +82,7 @@
         <!------------------------- About section -------------------------->
         <section id = 'about' class="about">
             <div class="container flex items-center"> 
-                <div class="flex-1">
+                <div class="flex-1" data-aos="zoom-in-down" data-aos-duration="1000">
                     <img class="about-img" src="./images/abha-2.jpg" alt="">
                 </div>
                 <div class="flex-1">
@@ -107,25 +110,25 @@
                 <h1 class="section-heading"><span>My </span>Skills</h1>
                 <p>Every skill you acquire doubles your odds of success.</p>
                 <div class="card-wrapper">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down-right">
                         <img src="./images/code.png" alt="">
                         <h2>Web Development</h2>
                         <p>Web design is not just about creating pretty layouts. It’s about planning 
                             to arrange elements in such a way as best to accomplish a particular purpose.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-down-left">
                         <img src="./images/desktop.png" alt="">
                         <h2>Software Development</h2>
                         <p>First, solve the problem. Then, write the code. The most important single aspect 
                             of software development is to be clear about what you are trying to build.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-down-right">
                         <img src="./images/media.png" alt="">
                         <h2>Video Editing</h2>
                         <p>The process of editing is what I enjoy most - putting the pieces together and making 
                             sense out of them. We put two things together, and a current runs through it.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-down-left">
                         <img src="./images/brush.png" alt="">
                         <h2>Graphic Designing</h2>
                         <p>Technology over technique produces emotionless design. People don't use 
@@ -160,7 +163,7 @@
                 <h1 class="section-heading">My<span>Words</span></h1>
                 <p>Hardworking, determined and focused with a keen eye for details.</p>
             </div>
-            <div class="slide">
+            <div class="slide" data-aos="zoom-in-up" data-aos-duration="1000">
                 <img src="./images/abha-3.jpg">
                 <p>I would like to be a part of an organization where I could use and enhance 
                     my knowledge and talent for the development of both the organization and myself.
@@ -180,7 +183,7 @@
                 <p>Hardworking, determined and focused with a keen eye for details.</p>
             </div>
             <div class="card-wrapper">
-                <div class="card">
+                <div class="card" data-aos="zoom-out-right" data-aos-duration="1000">
                     <div class="img-wrapper"><img src="./images/DA.jpg" alt=""></div>
                     <div class="card-content">
                         <a href="#">
@@ -197,7 +200,7 @@
                         
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-out-left" data-aos-duration="1000">
                     <div class="img-wrapper"><img src="./images/FB.PNG" alt=""></div>
                     <div class="card-content">
                         <a href="#">
@@ -277,5 +280,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
