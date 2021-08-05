@@ -299,6 +299,8 @@ section.words .slide{
     flex-direction: column;
     padding: 0 30rem;
     border-style: outset;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 section.words .slide p{
