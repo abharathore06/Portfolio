@@ -11,13 +11,19 @@
     --light:#f2f2f2;
     --secondary:#070606;
 }
+  
+
+/*------------------------- Body section --------------------------*/
+
 
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
 }
 
 html{
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 
 *{
@@ -25,7 +31,13 @@ html{
     margin: 0px;
     box-sizing: border-box;
     --webkit-font-smoothing:antialiased;
+    
 }
+
+
+/*------------------------- Header section --------------------------*/
+
+
 header{
     background: var(--dark);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 85%, 0 100%);
@@ -235,7 +247,7 @@ section.skills .card-wrapper .card{
     padding-top: 5rem;
     text-align: center;
     transition: all 0.3 ease;
-    
+
 }
 
 section.skills .card-wrapper .card img{
@@ -283,15 +295,6 @@ section.available p{
     margin-bottom: 2rem;
 }
 
-section.words .slide img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
 section.words .slide{
     text-align: center;
     display: flex;
@@ -302,6 +305,17 @@ section.words .slide{
     margin-left: 20rem;
     margin-right: 20rem;
 }
+
+section.words .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
 
 section.words .slide p{
     font-family: 'Lato', 'sans-serif';
@@ -508,6 +522,7 @@ footer .footer-socials a:hover{
 
 .site-main-wrapper{
     position: relative;
+    width: 100%;
 }
 
 .hamberger{
@@ -595,7 +610,7 @@ footer .footer-socials a:hover{
 }
 
 
-@media(max-width:1074px){
+@media(max-width:1200px){
     header #main-nav{
         display: none;
     }
@@ -768,12 +783,14 @@ footer .footer-socials a:hover{
 
     section.contact .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 6.3rem;
+        grid-gap: 1rem;
+        margin-right: 10rem;
         
     }
 
     section.contact .input-wrap {
         margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 
     section.contact .input-wrap-2{
@@ -787,7 +804,7 @@ footer .footer-socials a:hover{
 
     footer .footer-logo hr {
         max-width: 200px;
-        margin-left: 105px;
+        margin-left: 100px;
         margin-top: 1rem;
     }
 
@@ -804,11 +821,75 @@ footer .footer-socials a:hover{
     section.about .social{
         margin-left: 1rem;
     }
+
+    section.words .slide{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     
     
 }
 
 
+@media(max-width:360px){
+    .home .right h3{
+        margin-left: -2rem;
+        margin-right: -3rem; 
+    }
+
+    .home .right h1{
+        margin-left: -2rem;
+        margin-right: -3rem; 
+    }
+
+    .home .right p{
+        padding-top: 1rem;
+        font-size: 0.9rem;
+        margin-left: -2rem;
+        margin-right: -2.5rem;
+    }
+
+    .home .left img{
+        padding-top:4.5rem;
+        height: 270px;
+        margin-bottom: 2rem;
+    }
+
+    section.words .slide{
+        margin-left: 1.5rem;
+        margin-right: 1.2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    section.contact .input-wrap {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    section.contact .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        margin-left: 7.5rem;
+        
+    }
+
+    footer .footer-logo hr {
+        max-width: 200px;
+        margin-left: 75px;
+        margin-top: 1rem;
+    }
+
+    .mobile-nav hr{
+        max-width: 200px;
+        margin-left: 45px;
+        margin-top: 1rem;
+    }
+}
 @media(min-width:576px){
     .container{
         max-width: 540px;
@@ -819,18 +900,26 @@ footer .footer-socials a:hover{
     .container{
         max-width: 720px;
     }
+
+    section.words .slide{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
 }
 
-@media(min-width:992px){
+
+
+/*@media(min-width:992px){
     .container{
         max-width: 960px;
     }
-}
+}*/
 
 @media(min-width:1200px){
     .container{
         max-width: 1152px;
     }
 }
+
 
 
